@@ -26,6 +26,12 @@ namespace Project.Controllers
 
             return View();
         }
+        public IActionResult Test()
+        {
+            ViewData["Message"] = "Your testing page.";
+            ViewBag.Message = "This message is brought by ViewBag";
+            return View();
+        }
 
         public IActionResult Error()
         {
